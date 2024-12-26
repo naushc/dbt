@@ -1,0 +1,27 @@
+# Ignore virtual environment folders
+venv/
+myenv/
+dbt_env/
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore project-specific configuration files
+.vscode/
+.idea/
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Docker files
+*.env
+docker-compose.override.yml
+
+# Ignore other folders
+node_modules/
+logs/
+temp/

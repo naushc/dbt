@@ -1,0 +1,1 @@
+{"_invocation_id": "8ff940bc-768b-4c0c-b913-10e93c0b3d92", "linked": {"0": {"name": "source.stocks_data.raw.stock_prices_all", "type": "source", "succ": [1]}, "1": {"name": "model.stocks_data.stage_stock_data", "type": "model"}}}
