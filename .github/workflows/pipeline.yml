@@ -43,7 +43,7 @@ jobs:
               role: ${{ secrets.SNOWFLAKE_ROLE }}
               warehouse: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
               database: ${{ secrets.SNOWFLAKE_DATABASE }}
-              schema: public
+              schema: STAGE
           target: dev" > ~/.dbt/profiles.yml
 
     - name: Print profiles.yml
