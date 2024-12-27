@@ -33,7 +33,7 @@ jobs:
         SNOWFLAKE_ROLE: ${{ secrets.SNOWFLAKE_ROLE }}
       run: |
         mkdir -p ~/.dbt
-        echo "my-snowflake-profile:
+        echo "stocks_data:
           outputs:
             dev:
               type: snowflake
