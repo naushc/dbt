@@ -33,18 +33,18 @@ jobs:
         SNOWFLAKE_ROLE: ${{ secrets.SNOWFLAKE_ROLE }}
       run: |
         mkdir -p ~/.dbt
-        echo "stocks_data:
+        echo 'stocks_data:
           outputs:
             dev:
               type: snowflake
               account: ${{ secrets.SNOWFLAKE_ACCOUNT }}
               user: ${{ secrets.SNOWFLAKE_USER }}
-              password: \"${{ secrets.SNOWFLAKE_PASSWORD }}\"
+              password: "${{ secrets.SNOWFLAKE_PASSWORD }}"
               role: ${{ secrets.SNOWFLAKE_ROLE }}
               warehouse: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
               database: ${{ secrets.SNOWFLAKE_DATABASE }}
               schema: STAGE
-          target: dev" > ~/.dbt/profiles.yml
+          target: dev' > ~/.dbt/profiles.yml
 
     - name: Print profiles.yml
       run: cat ~/.dbt/profiles.yml
